@@ -1,36 +1,4 @@
-<template>
-  <div id="app">
-    <section class="todoapp">
-			<!-- 头部 -->
-			<Head></Head>
-
-			<!-- 列表部分 -->
-			<Main></Main>
-
-			<!-- 底部 -->
-			<Footer></Footer>
-
-		</section>
-  </div>
-</template>
-	
-<script>
-import Head from './components/Head.vue'
-import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
-
-export default {//先注册，再使用
-  name: 'App',
-	components: {
-		Head,
-		Main,
-		Footer,
-	}
-}
-</script>
-
-<style>
-  hr {
+hr {
 	margin: 20px 0;
 	border: 0;
 	border-top: 1px dashed #c5c5c5;
@@ -171,6 +139,3 @@ export default {//先注册，再使用
 		left: 8px;
 	}
 }
-
-
-</style>
