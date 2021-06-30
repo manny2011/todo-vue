@@ -1,5 +1,5 @@
 const mutations = {//其中只能写同步代码，否则 报错
-  addTodo(state, payload) {
+  addTodo(state, payload) {//如果是多module,这里的state,是局部state
     console.log(payload);
     let id = state.list.length === 0 ? 1 : state.list[state.list.length - 1].id + 1
     payload.id = id

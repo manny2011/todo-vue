@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import mutations from './mutations.js'//提取出来专门管理 mutation handlers !
-import actions from './actions.js'//
+import actions from './actions.js'//提取出来专门管理
 
 Vue.use(Vuex)
 
@@ -19,7 +19,7 @@ const getters = {//相当于computed
 }
 //vuex允许将store分成多个moudle，分开去管理不同的业务数据与操作
 const store = new Vuex.Store({
-  strict: true,
+  strict: true,//必须通过mutations操作state
   state: {
     list: [
       { id: 1, name: '888', done: true },
